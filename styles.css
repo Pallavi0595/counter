@@ -1,0 +1,25 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: 250px;
+}
+.text{
+    font-size: 3.5em;
+    color:darkcyan
+}
+
+#counter{
+    font-size: 3em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    font-size: 4em;
+    color: red;
+}

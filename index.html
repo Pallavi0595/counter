@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title> counter </title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="logo">
+        <i class="fa fa-twitter"></i>
+
+    </div>
+    <div id="counter">
+        0
+
+    </div> 
+    <div class="text" >
+        Twitter Followers
+
+
+    </div>
+  </div>  
+  <script>
+
+    const myInterval = setInterval(update,10);
+    var count = 0;
+    function update(){
+        count = count+1;
+        document.getElementById("counter").innerHTML = count;
+        if(count>999){  
+            clearInterval(myInterval);
+
+        }
+    }
+  </script>
+</body>
+</html>
